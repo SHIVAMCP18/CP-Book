@@ -1,3 +1,5 @@
+// Lower Bound ----> Smallest Index Such That " arr[Index] > = target "
+                                                -----------------------
 #include<bits/stdc++.h>
 using namespace std;
 
