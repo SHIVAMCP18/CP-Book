@@ -16,5 +16,5 @@
 		for(int i=0;i<n;i++){
 			cin>>a[i];
 		}
-		cout<<"Sum of Digits: "<<Array_Sum(a,n-1);
+		cout<<"Sum Of Elements: "<<Array_Sum(a,n-1);
 	}
