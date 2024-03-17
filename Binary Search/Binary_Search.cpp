@@ -87,3 +87,42 @@ int main() {
 	}
 	return  -1;
 }
+
+//using the vector
+#include <bits/stdc++.h>
+using namespace std;
+	
+int main(){
+
+	int n;
+	cin>>n;
+
+	vector<int> a(n);
+	for(int i=0;i<n;i++){
+		cin>>a[i];
+	}
+	int to_find;
+	cin>>to_find;
+	int l = 0, r = n-1;
+	int  M;
+
+
+	while(r - l > 1){
+		M = l + ((r - l))/2;
+		if(a[M] < to_find){
+			l = M + 1;
+		}
+		else{
+			r = M;
+		}
+	}
+	if(a[l]==to_find){
+		cout<<l<<endl;
+	}
+	else if(a[r]==to_find){
+		cout<<r<<endl;
+	}
+	else{
+		cout<<"Not Found: "<<endl;
+	}
+}
