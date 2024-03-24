@@ -10,7 +10,7 @@ int main(){
 		int x;                                            |        x4        |
 		cin >> x;                                         |        x3        |
 		s.push(x);                                        |        x2        |
-	}                                                   |________x1________|
+	}                                                         |________x1________|
   
 	while(!s.empty()){
 		cout << s.top() << endl;   // top-element = x4
